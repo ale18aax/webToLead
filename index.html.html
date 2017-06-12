@@ -1,0 +1,117 @@
+<html class=""><head><script src="//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js"></script><script src="//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js"></script><script src="//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js"></script><meta charset="UTF-8"><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico"><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111"><link rel="canonical" href="https://codepen.io/markmurray/pen/JsAhx/">
+
+<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<style class="cp-pen-styles">@import url(https://fonts.googleapis.com/css?family=Merriweather);
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #f1f1f1;
+  font-family: 'Merriweather', sans-serif;
+  padding: 1em;
+}
+
+h1 {
+  text-align: center;
+  color: #a8a8a8;
+  text-shadow: 1px 1px 0 white;
+}
+
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+}
+form input, form textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: 'Merriweather', sans-serif;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+form input:focus, form textarea:focus {
+  -moz-box-shadow: 0 0px 2px #e74c3c !important;
+  -webkit-box-shadow: 0 0px 2px #e74c3c !important;
+  box-shadow: 0 0px 2px #e74c3c !important;
+}
+form #input-submit {
+  color: white;
+  background: #00BFFF;
+  cursor: pointer;
+}
+form #input-submit:hover {
+  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+}
+form textarea {
+  height: 126px;
+}
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right {
+  width: 50%;
+}
+
+.left {
+  margin-right: 2%;
+}
+
+@media (max-width: 480px) {
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+}
+/* Clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+</style></head><body>
+<h1>Web to Lead</h1>
+<form class="cf" action="https://sdodocusign--mouseco1.cs67.my.salesforce.com/servlet/servlet.WebToLead" method="POST">
+  <div class="half left cf">
+    <input type=hidden name="oid" value="00D0n0000000O4C">
+<input type=hidden name="retURL" value="http://">
+    <input type="text" id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="First Name">
+        <input type="text" id="last_name" maxlength="40" name="last_name" size="20" type="text" placeholder="Last Name">
+    <input type="text" id="email" maxlength="40" name="email" size="20" type="text" placeholder="Email">
+    <input type="text" id="company" maxlength="40" name="company" size="20" type="text" placeholder="Company">
+    <input type="text" id="city" maxlength="40" name="city" size="20" type="text" placeholder="City">
+    <input type="text" id="state" maxlength="40" name="state" size="20" type="text" placeholder="Province/State">
+  </div>
+  <div class="half right cf">
+    <textarea name="description" type="text" id="input-message" placeholder="Description"></textarea>
+  </div>  
+  <input type="submit" value="SUBMIT" id="input-submit">
+</form>
+
+</body></html>
